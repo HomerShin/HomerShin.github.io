@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BreedNote — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #6b7280;
+    --accent: #156B52;
+    --border: #e5e7eb;
+    --card: #f9fafb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --fg: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #34d399;
+      --border: #1f2937;
+      --card: #151922;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+  header {
+    text-align: center;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+  h3 {
+    font-size: 15px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 24px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .card strong { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 14px; }
+  .updated {
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    background: var(--card);
+    font-weight: 600;
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>BreedNote Privacy Policy</h1>
+  <p>Local-first pet health log · No tracking, no account required</p>
+</header>
+
+<p class="updated">Last updated: November 13, 2026</p>
+
+<p>
+  Welcome to BreedNote. This privacy policy explains exactly what data we do
+  (and do not) collect when you use the app. We built BreedNote as a
+  <strong>local-first</strong> application: your pet's health records stay on
+  your device by default, and we do not operate any user accounts.
+</p>
+
+<h2>1. Information We Do NOT Collect</h2>
+<p>BreedNote does <strong>not</strong> collect, store, or transmit any of the following:</p>
+<ul>
+  <li>Your name, email, phone number, or mailing address</li>
+  <li>Your pet's name, medical records, weight, or vaccine history</li>
+  <li>Photos you attach to clinic visits</li>
+  <li>Your precise or approximate location</li>
+  <li>Advertising identifiers (IDFA / IDFV on iOS, AAID on Android)</li>
+  <li>Analytics or crash telemetry from a first-party service</li>
+</ul>
+
+<div class="card">
+  <strong>All pet data — breeds, vaccines, weight charts, visit notes, photos —
+  is stored locally on your device using SQLite. It never leaves your phone or
+  tablet unless you explicitly export it (for example, by sharing a PDF health
+  report).</strong>
+</div>
+
+<h2>2. Permissions We Request</h2>
+<p>BreedNote requests the following device permissions, and only when you
+actually use the related feature:</p>
+
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Purpose</th><th>Data Leaves Device?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Notifications</td><td>Deliver vaccine, deworming, and wellness reminders you schedule</td><td>No — local notifications only</td></tr>
+    <tr><td>Photo Library / Camera</td><td>Attach photos to clinic visit notes (you choose which images)</td><td>No — stored locally</td></tr>
+    <tr><td>Photo Library (Pro)</td><td>Save exported PDF health reports to your device</td><td>No — saved locally</td></tr>
+  </tbody>
+</table>
+
+<p class="muted">You can revoke any permission at any time through your
+device's Settings app. The core features of BreedNote continue to work without
+notifications or photo access.</p>
+
+<h2>3. Third-Party Services</h2>
+<p>We use a small number of third-party SDKs for essential app functionality.
+Below is a transparent summary of each, with links to their own privacy
+policies:</p>
+
+<table>
+  <thead>
+    <tr><th>Service</th><th>What It Does</th><th>Data Shared</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>RevenueCat</strong></td>
+      <td>Processes subscriptions (Pro upgrade) and validates Apple / Google in-app purchases</td>
+      <td>Anonymous device identifier, product purchase tokens. <em>No</em> pet data, names, or photos are sent.</td>
+    </tr>
+    <tr>
+      <td><strong>Apple App Store / Google Play</strong></td>
+      <td>Delivers the app, processes payments, and manages subscriptions</td>
+      <td>Handled entirely by Apple or Google. See their privacy policies linked below.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>External links:</p>
+<ul>
+  <li>RevenueCat Privacy Policy — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+  <li>Apple Privacy Policy — <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a></li>
+  <li>Google Privacy Policy — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+</ul>
+
+<h2>4. Children's Privacy</h2>
+<p>
+  BreedNote is rated for all ages and does not collect personal information
+  from anyone, including children under 13 (or the applicable age of consent in
+  your jurisdiction). Since we do not request accounts, names, or any
+  identifiers, there is nothing for us to knowingly collect.
+</p>
+
+<h2>5. Data Retention & Deletion</h2>
+<p>
+  Because we do not store your pet's data on our servers, there is nothing we
+  can delete on your behalf. To remove all data from your device, simply
+  uninstall BreedNote. Alternatively, you can use the in-app "Delete Pet"
+  action on each pet profile.
+</p>
+
+<h2>6. International Use</h2>
+<p>
+  BreedNote is currently available in the United States and Japan. Since no
+  pet data is transmitted from your device, international transfer concerns
+  do not apply to your health records. Subscription data handled by RevenueCat
+  and the App Store / Google Play is subject to their respective policies.
+</p>
+
+<h2>7. Future Changes</h2>
+<p>
+  We may add features in the future — such as optional cloud sync — that would
+  require handling more data. If we do, we will update this policy, offer an
+  explicit opt-in, and give you a clear way to disable cloud features at any
+  time. We will <em>never</em> begin collecting data we do not need for a
+  clearly stated purpose.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+  If you have any questions or concerns about this privacy policy, email us at:
+</p>
+<p>
+  <strong>privacy@breednote.app</strong>
+</p>
+<p class="muted">
+  We typically respond within a few business days.
+</p>
+
+<footer>
+  © 2026 BreedNote · Homer Shin · All rights reserved
+</footer>
+
+</div>
+</body>
+</html>
